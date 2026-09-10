@@ -17,7 +17,7 @@ healthText:SetFont(fontPath, 15, "OUTLINE")
 local miniManaBar = CreateFrame("StatusBar", nil, addon.frame)
 addon.miniManaBar = miniManaBar
 miniManaBar:SetSize(200, 6)
-miniManaBar:SetPoint("TOPLEFT", healthBar, "BOTTOMLEFT", 0, -1)
+miniManaBar:SetPoint("TOPLEFT", healthBar, "BOTTOMLEFT", 0, 0)
 miniManaBar:SetStatusBarTexture(addon.barTexture)
 miniManaBar:SetStatusBarColor(unpack(addon.resourceColors[Enum.PowerType.Mana]))
 addon:AddBackground(miniManaBar)
