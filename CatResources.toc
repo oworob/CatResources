@@ -1,0 +1,7 @@
+## Interface: 120100
+## Title: CatResources
+## Notes: Feral Druid resource bars
+## Author: You
+## SavedVariables: CatResourcesDB
+
+CatResources.xml

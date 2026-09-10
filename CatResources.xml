@@ -1,0 +1,9 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <Script file="libs\LibEQOL\libs\LibStub\LibStub.lua"/>
+    <Include file="libs\LibEQOL\LibEQOL.xml"/>
+    <Script file="CatResources.lua"/>
+    <Script file="bars\AddBackground.lua"/>
+    <Script file="bars\HealthBar.lua"/>
+    <Script file="bars\ResourceBar.lua"/>
+    <Script file="bars\ComboPointBar.lua"/>
+</Ui>
