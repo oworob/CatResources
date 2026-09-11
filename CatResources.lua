@@ -15,7 +15,7 @@ local defaults = {
 local defaultPosition = {
     point = "CENTER",
     x = 0,
-    y = 200,
+    y = -250,
 }
 
 addon.barTexture = "Interface\\AddOns\\" .. addonName .. "\\textures\\Atrocity"
@@ -24,11 +24,12 @@ addon.resourceColors = {
     [Enum.PowerType.Mana] = {0.2, 0.35, 1, 1},
     [Enum.PowerType.Energy] = {1, 0.741, 0.231, 1},
     [Enum.PowerType.ComboPoints] = {1, 0.12, 0.13, 1},
-    [Enum.PowerType.Rage] = {1, 0.2, 0.2, 1}
+    [Enum.PowerType.Rage] = {1, 0.2, 0.2, 1},
+    [Enum.PowerType.LunarPower] = {0.47, 0.47, 0.73, 1},
 }
 
 addon.frame = CreateFrame("Frame", "CatResourcesFrame", UIParent)
-addon.frame:SetSize(400, 61)
+addon.frame:SetSize(400, 60)
 
 local function Initialize()
     CatResourcesDB = CatResourcesDB or {}
@@ -195,6 +196,7 @@ local function Initialize()
             addon:UpdateVisibility()
             addon:UpdateHealth()
             addon:UpdateResource()
+            addon:ToggleComboPointBar()
             addon:UpdateResourceColor()
             addon:UpdateEnergyTick()
             addon:UpdateChompTick()
