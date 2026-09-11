@@ -1,7 +1,7 @@
 ## Interface: 120100
 ## Title: CatResources
-## Notes: Feral Druid resource bars
-## Author: You
+## Author: Archeonia
+## Notes: Druid resource bars
 ## SavedVariables: CatResourcesDB
 
 CatResources.xml
